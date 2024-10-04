@@ -1,25 +1,3 @@
-import sys
-import os
-import streamlit as st
-import google.generativeai as genai
-from llama_index.llms.gemini import Gemini
-#from llama_index.embeddings.openai import OpenAIEmbedding
-from llama_index.core import Settings,DocumentSummaryIndex,SummaryIndex,VectorStoreIndex, SimpleDirectoryReader, get_response_synthesizer,load_index_from_storage,StorageContext
-from llama_index.readers.web import SimpleWebPageReader
-from IPython.display import Markdown, display
-import warnings
-import re
-import time
-from llama_index.readers.web import AsyncWebPageReader, BeautifulSoupWebReader
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.core.query_engine import RetrieverQueryEngine
-from llama_index.core.retrievers import VectorIndexRetriever
-#from llama_index import GPTTreeIndex
-from llama_index.core.postprocessor import SimilarityPostprocessor
-from llama_index.core import PromptTemplate
-from llama_index.core.node_parser import SentenceSplitter
-# imports
-from llama_index.embeddings.gemini import GeminiEmbedding
 
 
 
